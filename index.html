@@ -3,17 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=" />
-    <title>Home</title>
+    <title>INFO 1601 Lab 2 Practice</title>
   </head>
   <body>
     <nav>
-      <a href="index.html"><b>Home</b></a>
- 
+      
+      <style>
+        h1 { color: #ff0000; }
+        a { color: #0011ff; }
+      </style>
+
+
+      <h1>INFO 1601 Lab 2 Practice</h1>
+      
+      <a href="https://www.instagram.com/nicolai.20x">Follow me on Instagram</a> <br> <br>
+
+      <table border="solid">
+
+      <thead> <th>Item</th><th>Qty</th><th>Price</th><th>Total</th> </thead>
+        
+          <tbody>
+
+            <tr>
+               <td>Milk</td><td>2</td><td>$8.00</td><td>$16.00</td>
+            </tr>
+
+            <tr>
+               <td>Eggs Pack</td><td>1</td><td>$6.00</td><td>$6.00</td>
+            </tr>
+
+            <tr>
+               <td>Cheese</td><td>4</td><td>$9.00</td><td>$36.00</td>
+            </tr>
+
+            <tr>
+              <td>Bread</td><td>3</td><td>$5.00</td><td>$15.00</td>
+            </tr>
+
+          </tbody>
+
+        <tfoot>
+
+            <tr>
+               <td>Total</td><td></td><td></td><td>$73.00</td>
+            </tr>
+
+        </tfoot>
+      
+      </thead>
+
+    </table>
+
+    <br> <br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JdZ3ZuP8-eM?si=lQ-Ndb8l9Tk0efFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br> <br>
+
+    <form action="../results.html" method="GET">
+      <fieldset>
+        <legend>Demographic Info</legend>
+
+        <label>
+          Full Name
+          <input type="text" placeholder="Enter your name" name="fullname" />
+        </label>
+
+        <br />
+
+        <label>
+          Sex
+          <select name="sex">
+            <option value="1">male</option>
+            <option value="2">female</option>
+            <option value="3">other</option>
+          </select>
+        </label>
+
+        <br>
+
+        <label for="dob">Date Of Birth</label>
+        <input type="date" value="2000-01-01" name="dob" />
+
+
+        <br>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Info</legend>
+
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+
+        <br />
+
+        <label>
+          County
+          <input list="counties" name="county" />
+          <datalist id="counties">
+            <option value="Caroni"></option>
+            <option value="Mayaro"></option>
+            <option value="Nariva"></option>
+            <option value="Saint Andrew"></option>
+            <option value="Saint David"></option>
+            <option value="Saint George"></option>
+            <option value="Saint Patrick"></option>
+            <option value="Victoria"></option>
+          </datalist>
+        </label>
+
+        <br />
+
+        <label>
+          Telephone
+          <input type="tel" name="telephone" />
+        </label>
+      </fieldset>
+
+     <fieldset>
+        <legend>Skills</legend>
+
+        <label>
+          <input type="checkbox" name="courses" value="info1601" checked/>
+          <span>C++</span>
+        </label>
+      
+        <label>
+          <input type="checkbox" name="courses" value="comp1602"/>
+          <span>Java</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1603"/>
+          <span>Python</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1604"/>
+          <span>JavaScript</span>
+        </label>
+
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Signup" />
+    </form>
+
     </nav>
-    <h1>Home</h1>
-
   
-
-
   </body>
 </html>
